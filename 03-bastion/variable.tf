@@ -7,7 +7,7 @@ variable "environment" {
 }
 
 
-variable "comment" {
+variable "common_tags" {
     default = {
         Project = "expense"
         Environment = "dev"
