@@ -9,7 +9,7 @@ module "db" {
 
     db_name = "transations"
     username = "root"
-    prot     = "3306 "
+    port     = "3306 "
 
     vpc_security_group_ids = [data.aws_ssm_parameter.db_sg_id.value]
 
