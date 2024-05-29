@@ -134,7 +134,7 @@ resource "aws_security_group_rule" "frontend_public" {
 
 
 resource "aws_security_group_rule" "frontend_bastion" {
-    type    = "insgress"
+    type    = "ingress"
     from_port = 22
     to_port   = 22
     protocol  = "tcp"
