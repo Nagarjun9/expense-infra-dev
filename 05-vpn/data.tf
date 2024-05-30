@@ -13,12 +13,12 @@ data "aws_ami" "ami_info" {
 
      filter {
         name  = "name"
-        value = {"OpenVPN Access Server Community Image-fe8020db-*"}
+        values = {"OpenVPN Access Server Community Image-fe8020db-*"}
      }
 
      filter {
         name = "root-device-type"
-        value = ["ebs"]
+        values = ["ebs"]
      }
 
      filter {
